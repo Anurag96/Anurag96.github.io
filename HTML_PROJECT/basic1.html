@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>This is my sample page</title>
+            <meta name="viewport" content="width=device-width, initial"/>
+            <meta http-equiv="Content-Type" content="text/html"; charset="utf-8"/>
+            <meta name="description" content="This is my sample development page." />
+    
+    <style type="text/css">
+        Body {
+            color: blue;
+        }
+    </style>
+    <script>
+        function convertData(){
+            var x = document.getElementById("input");
+            console.log(x);
+            console.log(x.value);
+            x.value = x.value.toUpperCase();
+        }
+        function convertTemp(){
+            var y = document.getElementById("temp");
+            console.log(y.value);
+            console.log(y.id);
+            y.value = (y.value * 1.8) + 32
+        }
+        function convertMoney(){
+            var z = document.getElementById("money")
+            z.value = (z.value * 76.01)
+        }
+    </script>
+    </head>
+    <body>
+Please enter the text here <input type="text" id="input" onchange="convertData()"/> <br/>
+Convert from Celcius to Fahrenhit <input type="text" id="temp" onchange="convertTemp()" /> <br/>
+Converstion Dollar to INR <input type="text" id="money" onchange="convertMoney()"/>
+</body>
+</html>
