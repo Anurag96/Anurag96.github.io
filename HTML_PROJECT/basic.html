@@ -5,17 +5,25 @@
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <meta name="description" content=" This is the calculation page"/>
         <meta http-equiv="Content-Type" content="text/html"; charset="utf-8"/>
+        <style>
+            Body {
+                color:red;
+            }
+        </style>
            <script>
             function convertData(){
                 var x = document.getElementById("input");
                 console.log(x);
                 console.log(x.value);
-                x.value = x.value.toUpperCase();
+                x.value = (isNaN(x.value.toUpperCase()))==true ?x.value.toUpperCase():"String values only";
             }
             </script>
     </head>
     <body>
-        <p>Please enter the text here </p>
+        <p> This is a simple HTML web page.</p>
+        <p>The below function will capitalize the letter.</br>
+        Please enter the text here </p>
 <input type="text" id="input" onchange="convertData()"/> <br/>
+<p>This is line 1 <br> This is line 2. &nbsp;&nbsp; This is line 3.</p>
 </body>
 </html>

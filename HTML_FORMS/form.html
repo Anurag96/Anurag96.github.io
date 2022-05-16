@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html">
+        <meta name="viewport" content="width=device-width" initial-scale="1">
+        <meta description="description" content="This is a form">
+    </head>
+    <body>
+        <!-- Employment Application: <br>
+        First Name: <input type="text" id="input" onchange="convertData()"/><br>
+        Last Name: <input type="text" id="input" onchange=""/><br>
+        Position : <input type="select" id="position"/><br>
+        Experience level : <input type="select" id="experience"/><br>
+        Job Type : <input type="checkbox" name="Full-Time" id="jobType"/><br>
+        Employment Status : <input type="checkbox" id="jobStatus"/><br>
+        Additional Information : <input type="text"/><br>
+        <input type="button" name="Submit"/>
+        <input type="button" name="Reset"/> -->
+    <form name="employment" action="send.php" method="post">
+        <table width="400" border="1" cellspacing="2" cellpadding="2"> 
+            <tr>
+                <td colspan="2" align="center" valign="top">Employment Application</td>
+            </tr>
+            <tr>
+                <td>First Name</td>
+                <td><input type="text" id="input" name="fname" maxlength="50"/></td>
+            </tr>
+            <tr>
+                <td>Last Name</td>
+                <td><input type="text" id="input" name="lname" maxlength="50"/></td>
+            </tr>
+            <tr>
+                <td>Position</td>
+                <td>
+                    <select name="position">
+                        <option value="DE">Developer</option>
+                        <option value="LD">Team Lead</option>
+                        <option value="MG">Team Manager</option>
+                        <option value="AN">Data Analyst</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Experience level</td>
+                <td>
+                    <select name="experience">
+                        <option value="EN">Entry</option>
+                        <option value="MD">Mid-Level</option>
+                        <option value="SN">Senior</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Job Type</td>
+                <td>
+                    <input type="checkbox" name="ft">Full-Time
+                    <input type="checkbox" name="pt">Part-Time
+                    <input type="checkbox" name="ct">Contract
+                </td>
+            </tr>
+            <tr>
+                <td>Employment Status</td>
+                <td>
+                    <input type="radio" name="estatus" value="employed"/> Employed
+                    <input type="radio" name="estatus" value="unemployed"/> Unemployed
+                    <input type="radio" name="estatus" value="student"/> Student
+                </td>
+            </tr>
+            <tr>
+                <td>Additional Information</td>
+                <td> <textarea name="comments" cols="45" rows="5"></textarea></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="button" name="submit" value="Submit"/>
+                <input type="button" name="value" value="Reset"/></td>
+            </tr>
+        </table>
+    </form>
+    </body>
+</html>
