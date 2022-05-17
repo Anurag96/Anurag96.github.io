@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <table cellspacing="2" cellpadding="2" width="400" border="1">
+            <tr>
+                <td colspan="2" align="center" valign="top">Employment Application</td>
+            </tr>
+            <tr>
+                <td>First Name</td>
+                <td><input type="text" id="input" name="fname" maxlength="50"></td>
+            </tr>
+            <tr>
+                <td>Last Name</td>
+                <td><input type="text" id="input" name="lname" maxlength="50"></td>
+            </tr>
+            <tr>
+                <td>Position</td>
+                <td>
+                    <select name="position">
+                        <option value="developer" selected>Developer</option>
+                        <option value="lead" >Lead</option>
+                        <option value="Analyst" >Analyst</option>
+                        <option value="manager">Manager</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Experience level</td>
+                <td>
+                    <select name="experience">
+                        <option value="developer" selected>Fresher</option>
+                        <option value="lead" >Senior</option>
+                        <option value="Analyst">Student</option>
+                     </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Job Type</td>
+                <td>
+                    <input type="checkbox" value="FT"/>Full-Time
+                    <input type="checkbox" value="PT"/>Part-Time
+                    <input type="checkbox" value="CT"/>Contract
+                </td>
+            </tr>
+            <tr>
+                <td>Employment Status</td>
+                <td>
+                    <input type="radio" name="estatus" value="EM"/>Employed
+                    <input type="radio" name="estatus" value="UN"/>UnEmployed
+                    <input type="radio" name="estatus" value="ST"/>Student
+                </td>
+            </tr>
+            <tr>
+                <td>Additional Information</td>
+                <td>
+                    <textarea name="comments" cols="45" rows="5"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                    <td><input type="button" name="submit" value="Submit"/>
+                    <input type="button" name="value" value="Reset"/></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

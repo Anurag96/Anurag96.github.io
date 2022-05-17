@@ -17,3 +17,10 @@ It is more widely used.
     - <style> are located in head-tag. Has one rule Body=>color=>red Ex: <style type="text/css">Body{color:'red';}</style>
     - <script> are javascript functions, which will be used on html documents.
 - <Body> tags are the visible are of the web browser.
+- # HTML FORMS
+- Forms are used gather the uout from the users.
+- FOrm data can be inputted into a database or sent to an email address.
+- Form inputs are created in the HTML
+- Data is submitted to a PHP script for the processing.
+
+- IFrame is HTML document embedded into another HTML document.
