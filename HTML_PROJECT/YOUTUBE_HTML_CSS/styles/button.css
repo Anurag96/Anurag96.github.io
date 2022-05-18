@@ -1,0 +1,87 @@
+.subscribe {
+  background-color: rgb(202, 43, 43);
+  color: white;
+  border: none;
+  border-radius: 2px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 2.58%;
+  padding-right: 2.58%;
+  cursor: pointer;
+  transition: opacity 1s;
+  vertical-align: top;
+}
+.subscribe:hover {
+  /* background-color:rgb(233, 106, 106); */
+  opacity: 0.8;
+}
+.subscribe:active {
+  /* background-color:rgb(155, 65, 65); */
+  opacity: 0.2;
+}
+.join {
+  border: 1;
+  border-color: rgb(95, 95, 172);
+  color: rgb(95, 95, 172);
+  background-color: white;
+  /* width:70px;
+  height:37px; */
+  padding-bottom: 8px;
+  padding-top: 8px;
+  padding-left: 2.58%;
+  padding-right: 2.58%;
+  margin-right: 8px;
+  margin-left: 8px;
+  transition: background-color 1s, color 1s;
+  vertical-align: top;
+}
+.join:hover {
+  background-color: rgb(95, 95, 172);
+  color: white;
+}
+.join:active {
+  opacity: 0.8;
+}
+.twitter {
+  background-color: rgb(29, 155, 240);
+  color: white;
+  border: none;
+  width: 75px;
+  height: 37px;
+  border-radius: 18px;
+  font-weight: bold;
+  font-size: 13px;
+  transition: box-shadow 0.5s;
+  vertical-align: top;
+}
+.twitter:hover {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.55);
+  opacity: 0.8;
+}
+.twitter:active {
+  opacity: 0.5;
+}
+.linkedin {
+  background-color: rgb(10, 102, 194);
+  color: white;
+  font-weight: bold;
+  font-size: 13px;
+  width: 200px;
+  height: 38px;
+  border: none;
+  border-radius: 17px;
+  margin-left: 10px;
+  vertical-align: top;
+}
+.facebook-create {
+  margin-top: 10px;
+  background-color: rgb(66, 183, 42);
+  color: white;
+  font-weight: bold;
+  font-family: Helvetica, Arial, sans-serif;
+  border: none;
+  border-radius: 6px;
+  font-size: 17px;
+  line-height: 48px;
+  padding: 0 16px;
+}
