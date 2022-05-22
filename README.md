@@ -18,23 +18,35 @@ It is more widely used.
     - script are javascript functions, which will be used on html documents.
 - <Body> tags are the visible are of the web browser.
   
-## HTML TABLE FORMS
+## HTML FORMS
 
 ```
     <form>
+        
+    </form>
+
+```
+- Forms are used gather the output from the users.
+- Forms data can be inputted into a database or sent to an email address.
+- Form inputs are created in the HTML.
+- Data is submitted to a PHP script for the processing.
+
+## HTML TABLE
+
+``` 
         <table>
                 <tr>
                     <td></td>
                 </tr>
         </table>
-    </form>
+ ```
 
+ - The tables has 2 attribute , i. tr (table_row) ii. td (table_data)
+ - Table atttribute used to add features to table
 ```
-- Forms are used gather the uout from the users.
-- Forms data can be inputted into a database or sent to an email address.
-- Form inputs are created in the HTML.
-- Data is submitted to a PHP script for the processing.
-
+<table 
+width="100%" height="60" border="0" bgcolor="#000000" cellspacing="5" cellpadding="5">
+```
 ## IFrame 
 - IFrame is HTML document embedded into another HTML document.
 
@@ -68,3 +80,8 @@ It is more widely used.
     <div style="background-color: yellow;flex:2"> div1<p>This is Anurag Kumar, what are you doing?</p></div>
   </div>
   ```
+
+  Conclusion:
+  - When you are concerned about the content size, use FLEX box
+  - When you wanna create GRID, then use the GRID
+  - For smaller content eirther can be use.
