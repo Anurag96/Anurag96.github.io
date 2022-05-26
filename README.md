@@ -85,3 +85,12 @@ width="100%" height="60" border="0" bgcolor="#000000" cellspacing="5" cellpaddin
   - When you are concerned about the content size, use FLEX box
   - When you wanna create GRID, then use the GRID
   - For smaller content eirther can be use.
+
+## CSS_POSITIONS
+- Fixed : Placed in the browser window and doesn't move from the page.
+- Absolute : Placed on the page rather the browser window, which does moves on the page.
+- Relative
+- Sticky
+- Inherit
+- Static
+The rest proprties work as property Fixed, but with one key difference.

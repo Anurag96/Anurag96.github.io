@@ -9,6 +9,7 @@
 <body style=" height: 3000px;
 padding-top:60px;
 padding-left: 80px;">
+
   <div style="background-color: black; color:white;
   position:fixed;
   top: 0;
@@ -16,7 +17,7 @@ padding-left: 80px;">
   left: 0;
   /* bottom: 550px; */
   height:50px;
-  ">Header</div>
+  ">Fixed</div>
   <div
   style="background-color:lightgreen;
   position:fixed;
@@ -25,36 +26,79 @@ padding-left: 80px;">
   width:72px;
   top:50px;
   "
-  >SideBar</div>
+  >Fixed</div>
 
-  <div
+  <!-- <div
   style="background-color:red;
   color:white;
-  position: absolute ;"
+  position: absolute ;
+  left:0px;
+  height: 100%;
+  top: 10px;
+  "
+  >Absolutee</div> -->
+
+  <div
+  style="background-color:purple;
+  color:white;
+  position: relative ;
+  left: 0px;
+  width: 70px;
+  height: 200px;
+  "
+  >Relative</div>
+
+  <div
+  style="background-color:pink;
+  color:white;
+  position: sticky ;
+  left: 0px;
+  width: 70px;
+  height: 200px;
+  "
+  >sticky</div>
+
+  <div
+  style="background-color:brown;
+  color:yellow;
+  position: inherit ;
+  left: 0px;
+  width: 70px;
+  height: 200px;
+  "
+  >inherit</div>
+
+  <div
+  style="background-color:magenta;
+  color:white;
+  position: absolute ;
+  left:0px;
+  height: 100%;
+  top: 50px;
+  "
   >Absolute</div>
-<div style="display:grid; grid-template-columns: 1fr 1fr 1fr;"> 
+
+<div style="display:grid; grid-template-columns: 1fr 1fr 1fr 1fr;"> 
   
   <div 
   style="background-color: lightblue; 
   height: 200px;
-  width: 200px;
-  /* position:static; */
-  /* margin-top: 60px; */
+  width: 70px;
+  position:static; 
   "
-  >div1</div>
+  >Static</div>
+  
   <div 
   style="background-color: lightpink;
   height: 200px;
-  width: 200px"
-  >div2</div>
-  <div 
-  style="background-color: lightblue; 
-  height: 200px;
   width: 200px;
-  /* position:static; */
-  /* margin-top: 60px; */
-  "
-  >div3</div>
+  position:relative;"
+  >div2
+  <div
+    style="background-color:black; color:white; 
+    position:absolute; bottom:5px; right:2px;"> 12:55</div>
+</div>
+  
 </div>
  
 </body>
