@@ -1,5 +1,7 @@
 # LearnHTML_CSS
 
+# HTML (Hyper-text markup language)
+
 ## HTML5
 XHTML makes sures it has all the closing tags.
 HTML5 is more flexible.
@@ -56,7 +58,7 @@ width="100%" height="60" border="0" bgcolor="#000000" cellspacing="5" cellpaddin
         </iframe> <br>
 ```
 
-
+# CSS (Cascading Style Sheets)
 
 ## GRID
 
@@ -112,3 +114,17 @@ The rest proprties work as property Fixed, but with one key difference.
  ## Targeting tags inside class like img/div
  
  className img => 1. .sidebar img{ height:10px;} 2.  .sidebar div{ height:10px;}
+ 
+ # Introduction to CSS
+ 
+ - The pupose of CSS is to format any object on webpage like tables,text,img,button,color.
+ - CSS are set of design rules.
+ - These are user defined and user can link stylesheets with the page.
+ 
+ ```
+ <style type="text/css">
+ Body{
+ color:red;
+ }
+ </style>
+ ```
