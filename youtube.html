@@ -8,8 +8,12 @@
   <style>
     body{
       margin: 0px;
+      /* margin-left:100px; */
+      margin-right: 20px;
       padding-top: 60px;
-      padding-left: 125px;
+      padding-left: 140px;
+      padding-right: 150px;
+      background-color:rgb(240, 239, 239);
     }
 
   .profile-picture{
@@ -40,7 +44,7 @@ vertical-align: top;
 }
 .video-grid{ 
   display:grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   /* display :flex;
   flex-direction:row; */
   column-gap: 20px; 
@@ -94,7 +98,7 @@ align-items: center;
 flex:0.5px;
 /* margin-left: 70px; */
 margin-right: 35px;
-max-width: 500px;
+max-width: 580px;
 display:flex;
 align-items: center;
 flex-direction: row;
@@ -122,7 +126,7 @@ flex-direction: row;
 .search-bar{
   margin-right: 0px;
   margin-top: 10px;
-  width: 300px;
+  width: 600px;
   height: 38px;
   font-family: Arial;
   font-size:15px;
@@ -140,6 +144,7 @@ flex-direction: row;
 .voice-search-icon{
   height:26px;
 }
+
 .search-button{
   margin-right: 10px;
   margin-top: 10px;
@@ -147,7 +152,27 @@ flex-direction: row;
   width: 80px;
   margin-left: -1px;
   border-style: none;
+  position:relative;
 }
+
+.search-button .tooltip{
+position:absolute;
+background-color:gray;
+color:white;
+padding: 6px;
+padding-left: 10px;
+padding-right:10px;
+border-radius: 2px;;
+font-size:12px;
+bottom: -37px;
+opacity: 0;
+transition: opacity 0.15s;
+pointer-events: none;
+}
+.search-button:hover .tooltip{
+  opacity: 1;
+}
+
 .voice-search-button{
   margin-right: 10px;
   margin-top: 10px;
@@ -155,7 +180,27 @@ flex-direction: row;
   border-radius: 25px;
   border: none;
   background-color:rgb(255, 244, 244);
+  position:relative;
 }
+.voice-search-button .tooltip{
+  position:absolute;
+background-color:gray;
+width:100px;
+color:white;
+padding: 6px;
+padding-left: 10px;
+padding-right:10px;
+border-radius: 2px;;
+font-size:12px;
+bottom: -45px;
+opacity: 0;
+transition: opacity 0.15s;
+pointer-events: none;
+}
+.voice-search-button:hover .tooltip{
+  opacity: 1;
+}
+
 .upload-icon{ height:28px;}
 .youtube-apps-icon{ height:28px;}
 .notifications-icon{ height:28px;}
@@ -163,29 +208,7 @@ flex-direction: row;
   border-radius: 14px;
 }
 
-.sidebar-link{
-  margin-bottom: 10px;
-  margin-top: 30px;
-  height: 20px;
-  width: 80px;
-}
-.sidebar-link:hover{
-  background-color: rgb(212, 207, 207);
-}
-.side-menu{
-    display:flex;
-    flex-direction: column;
-    align-items:center;
-    /* justify-content: space-between; */
-    flex:1;
-    position:fixed;
-    top: 55px;
-    left:5px;
-    bottom:0px;
-    align-items: flex-center;
-    z-index: 50px;
-}
-.thumbnail {
+.thumbnail { 
   width:100%;
   object-fit: cover;
   object-position: top;
@@ -221,6 +244,38 @@ flex-direction: row;
  top: 0;
  right:-3px;
 }
+.sidebar{
+  position:fixed;
+  left:0;
+  bottom:0;
+  top:40px;
+  background-color:white;
+  width:80px;
+  z-index: 300;
+  padding:20px;
+}
+.sidebar-link{
+  height:74px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  cursor: pointer;
+  padding-bottom:10px;
+  
+}
+.sidebar-link:hover{
+  background-color:rgb(235, 244, 244)
+}
+.sidebar-link img{
+height:28px;margin-bottom: 4px;
+}
+
+.sidebar-link div{
+  font-family:Arial;
+  font-size: 12px;
+  text-align: center;
+}
   </style>
 </head>
 <body>
@@ -232,8 +287,10 @@ flex-direction: row;
           </div>
           <div class="middle-section">
               <input class="search-bar" type="search" placeholder="Search"/>
-              <button class="search-button"><img class="search-icon" src="icons/search.svg"/></button> &nbsp;
-              <button  class="voice-search-button"><img class="voice-search-icon" src="icons/voice-search-icon.svg" /></button>
+              <button class="search-button"><img class="search-icon" src="icons/search.svg"/>
+              <div class="tooltip">Search </div>
+              </button> &nbsp;
+              <button  class="voice-search-button"><img class="voice-search-icon" src="icons/voice-search-icon.svg" /><div class="tooltip">Search with your Voice</div></button>
             
           </div>
           <div class="right-section">
@@ -245,16 +302,16 @@ flex-direction: row;
             <img class="channel-user-picture" src="channel-pictures/my-channel.jpeg">
           </div>
     </div>
-   
-    <div class="video-grid1">
-      <div class="side-menu">
-        <img class="sidebar-link" src="icons/home.svg"/> Home
-        <img class="sidebar-link" src="icons/explore.svg"/>Explore
-        <img class="sidebar-link" src="icons/subscriptions.svg"/> Subscriptions
-        <img class="sidebar-link" src="icons/originals.svg"/> Originals
-        <img class="sidebar-link" src="icons/youtube-music.svg"/> YouTube Music
-        <img class="sidebar-link" src="icons/library.svg"/> Library
+
+      <div class="sidebar">
+        <div class="sidebar-link"><img src="icons/home.svg"/> <div>Home</div></div>
+        <div class="sidebar-link"><img src="icons/explore.svg"/><div>Explore</div></div>
+        <div class="sidebar-link"><img  src="icons/subscriptions.svg"/><div>Subscriptions</div></div>
+        <div class="sidebar-link"><img  src="icons/originals.svg"/><div>Originals</div></div>
+        <div class="sidebar-link"><img  src="icons/youtube-music.svg"/><div>YouTube Music</div></div>
+        <div class="sidebar-link"><img  src="icons/library.svg"/><div>Library</div></div>
       </div>
+
       
       <div class="video-grid" style="flex:10">
           <div class="video-preview">

@@ -73,6 +73,10 @@ width="100%" height="60" border="0" bgcolor="#000000" cellspacing="5" cellpaddin
     <div 
 
 ```
+
+The parameters used for GRID are
+- display:grid
+- grid-template-columns: 100px 1fr 1fr 1fr;
 ## FLEXBOX
   ```
   <div style="display:flex;flex-direction: row;">
@@ -81,6 +85,12 @@ width="100%" height="60" border="0" bgcolor="#000000" cellspacing="5" cellpaddin
   </div>
   ```
 
+  The parameters for flex are:
+  -  display:flex
+  -  flex-direction:column
+  -  justify-content:center
+  -  align-items:center
+  
   Conclusion:
   - When you are concerned about the content size, use FLEX box
   - When you wanna create GRID, then use the GRID
@@ -94,3 +104,11 @@ width="100%" height="60" border="0" bgcolor="#000000" cellspacing="5" cellpaddin
 - Inherit
 - Static
 The rest proprties work as property Fixed, but with one key difference.
+
+## HOVER
+
+ className: hover => .sidebar:hover{ background-color:blue;}
+
+ ## Targeting tags inside class like img/div
+ 
+ className img => 1. .sidebar img{ height:10px;} 2.  .sidebar div{ height:10px;}
